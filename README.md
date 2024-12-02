@@ -1,5 +1,6 @@
 # ELG Connector Web Service
 
+## ELG authentication token creation
 This component needs an ELG authentication token, we can create it with the elg python client:
 
 ```bash
@@ -16,6 +17,7 @@ auth.to_json("tokens.json")
 ```
 This will create the authentification token that will be used by the ELG Connector Web Service.
 
+## Docker image creation
 We can now build the Docker image with:
 ```bash
 docker build -t elg_connector_ws .
